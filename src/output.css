@@ -225,9 +225,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\.5 {
     top: calc(var(--spacing) * 1.5);
   }
@@ -269,9 +266,6 @@
   }
   .-left-10 {
     left: calc(var(--spacing) * -10);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
@@ -333,9 +327,6 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -348,14 +339,8 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
-  .mt-16 {
-    margin-top: calc(var(--spacing) * 16);
-  }
   .mt-\[20px\] {
     margin-top: 20px;
-  }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
   }
   .mb-0\.5 {
     margin-bottom: calc(var(--spacing) * 0.5);
@@ -399,20 +384,11 @@
   .mb-\[15px\] {
     margin-bottom: 15px;
   }
-  .mb-\[18px\] {
-    margin-bottom: 18px;
-  }
   .mb-\[50px\] {
     margin-bottom: 50px;
   }
-  .ml-3 {
-    margin-left: calc(var(--spacing) * 3);
-  }
   .ml-3\.5 {
     margin-left: calc(var(--spacing) * 3.5);
-  }
-  .ml-6 {
-    margin-left: calc(var(--spacing) * 6);
   }
   .block {
     display: block;
@@ -456,9 +432,6 @@
   .h-screen {
     height: 100vh;
   }
-  .max-h-\[42px\] {
-    max-height: 42px;
-  }
   .max-h-\[78px\] {
     max-height: 78px;
   }
@@ -480,9 +453,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-1 {
-    max-width: calc(var(--spacing) * 1);
-  }
   .max-w-1\/5 {
     max-width: calc(1/5 * 100%);
   }
@@ -500,9 +470,6 @@
   }
   .max-w-\[58\%\] {
     max-width: 58%;
-  }
-  .max-w-\[92px\] {
-    max-width: 92px;
   }
   .max-w-\[130px\] {
     max-width: 130px;
@@ -576,9 +543,6 @@
   .max-w-\[619px\] {
     max-width: 619px;
   }
-  .max-w-\[668px\] {
-    max-width: 668px;
-  }
   .max-w-\[692px\] {
     max-width: 692px;
   }
@@ -603,9 +567,6 @@
   .max-w-\[1283px\] {
     max-width: 1283px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .origin-\[left-center\] {
     transform-origin: left-center;
   }
@@ -619,10 +580,6 @@
   }
   .translate-x-\[-23px\] {
     --tw-translate-x: -23px;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
@@ -655,9 +612,6 @@
   .resize-none {
     resize: none;
   }
-  .list-disc {
-    list-style-type: disc;
-  }
   .appearance-none {
     appearance: none;
   }
@@ -682,9 +636,6 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
-  }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
   }
@@ -693,9 +644,6 @@
   }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
-  }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
   }
   .gap-3\.5 {
     gap: calc(var(--spacing) * 3.5);
@@ -991,12 +939,6 @@
   .py-\[85px\] {
     padding-block: 85px;
   }
-  .pt-2 {
-    padding-top: calc(var(--spacing) * 2);
-  }
-  .pt-2\.5 {
-    padding-top: calc(var(--spacing) * 2.5);
-  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
@@ -1026,9 +968,6 @@
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
-  }
-  .pb-3 {
-    padding-bottom: calc(var(--spacing) * 3);
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
@@ -1137,9 +1076,6 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-\[\#202C39B2\] {
     color: #202C39B2;
   }
@@ -1189,10 +1125,6 @@
   .shadow-secondary {
     --tw-shadow: 0px 0px 7px 0px var(--tw-shadow-color, #00000024);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -1252,12 +1184,6 @@
       border-width: 1px;
     }
   }
-  .file\:border-0 {
-    &::file-selector-button {
-      border-style: var(--tw-border-style);
-      border-width: 0px;
-    }
-  }
   .file\:border-orange {
     &::file-selector-button {
       border-color: var(--color-orange);
@@ -1266,11 +1192,6 @@
   .file\:bg-\[\#E5581233\] {
     &::file-selector-button {
       background-color: #E5581233;
-    }
-  }
-  .file\:bg-orange {
-    &::file-selector-button {
-      background-color: var(--color-orange);
     }
   }
   .file\:px-4 {
@@ -1298,11 +1219,6 @@
   .file\:text-orange {
     &::file-selector-button {
       color: var(--color-orange);
-    }
-  }
-  .file\:text-white {
-    &::file-selector-button {
-      color: var(--color-white);
     }
   }
   .placeholder\:text-sm {
@@ -1597,11 +1513,6 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
-  .sm\:py-35 {
-    @media (width >= 40rem) {
-      padding-block: calc(var(--spacing) * 35);
-    }
-  }
   .sm\:py-\[40px\] {
     @media (width >= 40rem) {
       padding-block: 40px;
@@ -1740,11 +1651,6 @@
   .md\:mb-16 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 16);
-    }
-  }
-  .md\:mb-\[18px\] {
-    @media (width >= 48rem) {
-      margin-bottom: 18px;
     }
   }
   .md\:block {
@@ -2604,11 +2510,6 @@ h1, h2, h4, h6 {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -2730,7 +2631,6 @@ h1, h2, h4, h6 {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
