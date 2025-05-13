@@ -57,39 +57,67 @@ $('.user-slider').slick({
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const tabIds = [
-        "main",
-        "social",
-        "disclaimer",
-        "banner",
-        "style",
-        "apps"
-    ];
 
+document.addEventListener("DOMContentLoaded", function () {
+    const tabIds = ["main", "social", "disclaimer", "banner", "style", "apps"];
+
+    function activateTab(id) {
+        tabIds.forEach(tid => {
+            const tab = document.getElementById("tab-" + tid);
+            const content = document.getElementById("content-" + tid);
+
+            if (tid === id) {
+                tab.classList.add("text-orange-500", "font-semibold", "border-b-2", "border-orange-500", "pb-5");
+                tab.classList.remove("text-gray-400");
+
+                content.classList.remove("hidden");
+                content.classList.add("block");
+            } else {
+                tab.classList.remove("text-orange-500", "font-semibold", "border-b-2", "border-orange-500", "pb-5");
+                tab.classList.add("text-gray-400");
+
+                content.classList.add("hidden");
+                content.classList.remove("block");
+            }
+        });
+    }
+
+    // Initialize default tab
+    activateTab("main");
+
+    // Tab click handlers
     tabIds.forEach(id => {
         const tab = document.getElementById("tab-" + id);
-        const content = document.getElementById("content-" + id);
+        if (tab) {
+            tab.addEventListener("click", () => activateTab(id));
+        }
+    });
 
-        tab.addEventListener("click", () => {
-            // Reset all tabs
-            tabIds.forEach(resetId => {
-                const resetTab = document.getElementById("tab-" + resetId);
-                const resetContent = document.getElementById("content-" + resetId);
+    // Handle PREV and NEXT
+    document.querySelectorAll(".nav-prev").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const currentContent = btn.closest("div[id^='content-']");
+            const currentId = currentContent.id.replace("content-", "");
+            const currentIndex = tabIds.indexOf(currentId);
 
-                resetTab.classList.remove("text-orange-500", "font-semibold", "border-b-2", "border-orange-500", "pb-1");
-                resetTab.classList.add("text-gray-400");
+            if (currentIndex > 0) {
+                const prevId = tabIds[currentIndex - 1];
+                activateTab(prevId);
+            }
+        });
+    });
 
-                resetContent.classList.add("hidden");
-                resetContent.classList.remove("block");
-            });
+    document.querySelectorAll(".nav-next").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const currentContent = btn.closest("div[id^='content-']");
+            const currentId = currentContent.id.replace("content-", "");
+            const currentIndex = tabIds.indexOf(currentId);
 
-            // Activate current tab and content
-            tab.classList.add("text-orange-500", "font-semibold", "border-b-2", "border-orange-500", "pb-1");
-            tab.classList.remove("text-gray-400");
-
-            content.classList.remove("hidden");
-            content.classList.add("block");
+            if (currentIndex < tabIds.length - 1) {
+                const nextId = tabIds[currentIndex + 1];
+                activateTab(nextId);
+            }
         });
     });
 });
+
