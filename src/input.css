@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+    --font-primary: 'DM Sans', sans-serif;
+    --font-heading: "Lexend Deca", sans-serif;
+    --color-orange: #E55812;
+    --color-primary: #202C39;
+    --color-green: #29CC39;
+    --color-black: #000;
+    --shadow-primary: 0px 0px 6px 0px #00000029;
+    --shadow-secondary: 0px 0px 7px 0px #00000024;
+    --radius-30px: 30px;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(180deg, #FFEBE3 0%, #E6F2FF 90.93%);
+}
+
+.bg-gradient-primary-for.bg-gradient-primary-hover:hover{
+    background: linear-gradient(180deg, #FFEBE3 0%, #E6F2FF 90.93%);
+}
+
+body {
+    @apply font-primary text-primary font-medium;
+}
+
+h1, h2, h4, h6 {
+    @apply font-heading font-bold
+}
+
+.navmenu ul li a{
+    @apply border-b border-[#ddd] pb-3 lg:pb-0 lg:border-0 block
+}
+
+.navmenu ul li a:hover, .navmenu ul li a.active {
+    @apply text-orange border-b border-orange pb-3 lg:pb-0 lg:border-0 
+}
+
+.about-slider .slick-track, .user-slider .slick-track {
+    @apply flex gap-7 py-1
+}
+
+.about-slider .slick-list {
+    @apply sm:overflow-visible
+}
+
+.about-slider .slick-current {
+    @apply bg-gradient-to-b from-[#FFEBE3] to-[#E6F2FF]
+}
+
+.user-slider .slick-list {
+    @apply sm:overflow-visible
+}
+
+.user-slider .slick-center {
+    @apply scale-[1.1] opacity-100 z-[2] bg-gradient-to-b from-[#FFEBE3] to-[#E6F2FF] mx-2 sm:mx-5;
+}
+
+.user-slider .slick-current {
+    @apply bg-gradient-to-b from-[#FFEBE3] to-[#E6F2FF]
+}
+
+.user-slider .slick-track {
+    @apply flex gap-5 sm:gap-7 py-6
+}
+
+.copy-right a svg:hover path {
+    @apply fill-orange
+}
+
+.collasible ul li {
+    @apply text-[18px] md:text-[22px] font-semibold cursor-pointer
+}
+
+.collasible ul li.active {
+    @apply text-orange font-bold
+}

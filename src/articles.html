@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Email Signature</title>
+        <link rel="icon" type="image/x-icon"
+            href="assets/images/favi-icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link href="./output.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- header-section -->
+        <header class="mb-[-100px] relative z-10">
+            <div class="container mx-auto px-[15px] lg:px-[0px]">
+                <div
+                    class="flex justify-between items-center bg-secondary text-primary max-h-[78px] mt-[20px] mx-auto rounded-full px-[28px] py-[10px]"
+                    id="header">
+                    <div class="logo" id="logo">
+                        <a href="index.html"><img
+                                src="assets/images/logo.png"
+                                alt
+                                class="max-w-[130px] md:max-w-[188px]"></a>
+                    </div>
+                    <div
+                        class="burgerMenu lg:hidden w-6 h-6 cursor-pointer bg-transparent duration-300 ease-in-out relative z-[51]"
+                        id="burgerMenu">
+                        <span
+                            class="absolute block w-full h-[2px] bg-black rounded-[2px] duration-150 ease-in-out origin-[left-center] top-0"></span>
+                        <span
+                            class="absolute block w-full h-[2px] bg-black rounded-[2px] duration-150 ease-in-out origin-[left-center] top-2"></span>
+                        <span
+                            class="absolute block w-full h-[2px] bg-black rounded-[2px] duration-150 ease-in-out origin-[left-center] top-4"></span>
+                    </div>
+                    <nav
+                        class="navmenu lg:block fixed lg:static h-screen lg:h-full bottom-0 top-0 right-0 w-full sm:w-1/2 bg-white bg-opacity-95 px-7 pt-20 z-50 lg:pt-0 lg:px-0 lg:bg-transparent lg:w-auto hidden"
+                        id="navMenu">
+                        <ul
+                            class="flex flex-col h-full font-medium space-y-[16px] lg:space-y-0 lg:flex-row lg:items-center lg:space-x-10 xl:space-x-11 bg-white py-4 lg:px-9 rounded-full">
+                            <li class><a href="index.html"
+                                    class="">Home</a></li>
+                            <li class><a href="pricing.html"
+                                    class>Pricing</a></li>
+                            <li class><a href="faq.html" class>FAQ</a></li>
+                            <li class><a href="contact.html"
+                                    class>Contact</a></li>
+                            <li class=""><a href="articles.html" class="active">Try for -
+                                    Free
+                                </a></li>
+                            <div class="block mt-2.5 lg:hidden"
+                                id="getInTouchBtn">
+                                <div class="flex gap-7 items-center">
+                                    <a href="log-in.html"
+                                        class="text-base hover:text-orange">Log
+                                        In</a>
+                                    <a href="sign-up.html"
+                                        class="py-3 px-6 bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full font-semibold text-white text-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                                        Sign Up
+                                    </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                    <div class="hidden lg:block" id="getInTouchBtn">
+                        <div class="flex gap-7 items-center">
+                            <a href="log-in.html"
+                                class="text-base hover:text-orange">Log
+                                In</a>
+                            <a href="sign-up.html"
+                                class="py-3 px-6 bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full font-semibold text-white text-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- banner-section  -->
+        <section
+            class="bg-gradient-to-b from-[#FFEBE3] to-[rgba(230,242,255,0.1)] relative">
+            <div class="container mx-auto px-3.5">
+                <div
+                    class="banner-text pt-[186px] max-w-[775px] text-center mx-auto">
+                    <h1
+                        class="text-orange text-3xl sm:text-5xl lg:text-7xl font-bold leading-10 sm:leading-[65px] lg:leading-[92px] mb-6 ">How
+                        Can
+                        <span class="text-primary block">We Help You
+                            ?</span></h1>
+                    <p
+                        class="font-medium leading-6 mb-6 lg:mb-8 max-w-[692px] mx-auto text-sm sm:text-base">Lorem
+                        Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text.</p>
+                    <div
+                        class="max-w-[300px] sm:max-w-[360px] mx-auto relative">
+                        <input type="search" name id
+                            class="py-3 px-7 shadow-primary [&::-webkit-search-cancel-button]:hidden placeholder:text-sm focus:outline-orange placeholder:text-[#202C3942] rounded-full w-full"
+                            placeholder="Search article">
+                        <div
+                            class="absolute right-0 top-1/2 translate-x-[-23px] translate-y-[-8px]">
+                            <svg width="16" height="16" viewBox="0 0 16 16"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15 15L11.6945 11.6886M13.5263 7.26316C13.5263 8.92425 12.8665 10.5173 11.6919 11.6919C10.5173 12.8665 8.92425 13.5263 7.26316 13.5263C5.60207 13.5263 4.00901 12.8665 2.83444 11.6919C1.65987 10.5173 1 8.92425 1 7.26316C1 5.60207 1.65987 4.00901 2.83444 2.83444C4.00901 1.65987 5.60207 1 7.26316 1C8.92425 1 10.5173 1.65987 11.6919 2.83444C12.8665 4.00901 13.5263 5.60207 13.5263 7.26316Z"
+                                    stroke="#E55812" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- articles-section  -->
+        <section class="pt-[50px] lg:pt-[100px] py-[70px] lg:py-[150px]">
+            <div class="container mx-auto px-3.5">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-between">
+                    <div class>
+                        <div
+                            class="shadow-primary py-[32px] lg:py-[52px] text-center rounded-2xl bg-gradient-primary-for bg-gradient-primary-hover cursor-pointer mb-6 lg:mb-10 xl:mb-[60px]">
+                            <div class="mb-4 lg:mb-7">
+                                <img src="assets/images/creating-signature.png"
+                                    alt class="mx-auto max-w-1/5 lg:w-full">
+                            </div>
+                            <div
+                                class="text-xl lg:text-2xl xl:text-3xl font-bold mb-2 xl:mb-4">Creating
+                                Signature</div>
+                            <p class="text-[#202C3999] text-sm lg:text-base">I
+                                Need Help With
+                                Passport</p>
+                        </div>
+                        <div class="max-w-[390px]">
+                            <div
+                                class="text-xl lg:text-2xl xl:text-[26px] font-bold mb-4 lg:mb-5 xl:mb-[30px]">Creating
+                                Signature FAQ</div>
+                            <ul class="text-[#202C39CC] text-sm lg:text-base">
+                                <li
+                                    class="font-normal mb-2.5 lg:mb-3 xl:mb-5">How
+                                    Many
+                                    Signature
+                                    Templates Do You
+                                    Offer?</li>
+                                <li
+                                    class="font-normal mb-2.5 lg:mb-3 xl:mb-5">How
+                                    Do I
+                                    Change The
+                                    Social Media Icons And Sizes?</li>
+                                <li class="font-normal">How Do I Request Adding
+                                    Additional Social Media Icon Options?</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class>
+                        <div
+                            class="shadow-primary py-[32px] lg:py-[52px] text-center rounded-2xl bg-gradient-primary-for bg-gradient-primary-hover cursor-pointer mb-6 lg:mb-10 xl:mb-[60px]">
+                            <div class="mb-4 lg:mb-7">
+                                <img src="assets/images/Installing.png"
+                                    alt class="mx-auto max-w-1/5 lg:w-full">
+                            </div>
+                            <div
+                                class="text-xl lg:text-2xl xl:text-3xl font-bold mb-2 xl:mb-4">Installing
+                                Signature</div>
+                            <p class="text-[#202C3999] text-sm lg:text-base">
+                                I Need Help With Account Setup</p>
+                        </div>
+                        <div class="max-w-[390px]">
+                            <div
+                                class="text-xl lg:text-2xl xl:text-[26px] font-bold mb-4 lg:mb-5 xl:mb-[30px]">Installing
+                                Signature FAQ</div>
+                            <ul class="text-[#202C39CC] text-sm lg:text-base">
+                                <li
+                                    class="font-normal mb-2.5 lg:mb-3 xl:mb-5">When
+                                    I Edit My Signature The Changes Are Not
+                                    Showing Correctly In The Preview
+                                    Window.</li>
+                                <li
+                                    class="font-normal mb-2.5 lg:mb-3 xl:mb-5">I
+                                    Made Some Edits To My Signature, But They
+                                    Aren’t Showing In My Exported Signature.
+                                    What Should I Do?</li>
+                                <li class="font-normal">How Do I Add A Signature
+                                    To Apple Mail On Ios?</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class>
+                        <div
+                            class="shadow-primary py-[32px] lg:py-[52px] text-center rounded-2xl bg-gradient-primary-for bg-gradient-primary-hover cursor-pointer mb-6 lg:mb-10 xl:mb-[60px]">
+                            <div class="mb-4 lg:mb-7">
+                                <img src="assets/images/user-account.png"
+                                    alt class="mx-auto max-w-1/5 lg:w-full">
+                            </div>
+                            <div
+                                class="text-xl lg:text-2xl xl:text-3xl font-bold mb-2 xl:mb-4">User
+                                Accounts</div>
+                            <p class="text-[#202C3999] text-sm lg:text-base">I
+                                Need Help Using Welconi</p>
+                        </div>
+                        <div class="max-w-[390px]">
+                            <div
+                                class="text-xl lg:text-2xl xl:text-[26px] font-bold mb-4 lg:mb-5 xl:mb-[30px]">User
+                                Accounts FAQ</div>
+                            <ul class="text-[#202C39CC] text-sm lg:text-base">
+                                <li
+                                    class="font-normal mb-2.5 lg:mb-3 xl:mb-5">I
+                                    Can’t Login To My Account, What Should I
+                                    Do?</li>
+                                <li
+                                    class="font-normal mb-2.5 lg:mb-3 xl:mb-5">Why
+                                    Are My Emails Being Sent As Spam?</li>
+                                <li class="font-normal">I’ve Upgraded To PRO But
+                                    Am Still Recognized As
+                                    A Free User.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/common.js"></script>
+    </body>
+</html>
