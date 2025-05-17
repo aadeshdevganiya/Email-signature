@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     isMonthly = !isMonthly;
 
     if (isMonthly) {
-      indicator.classList.remove("translate-x-8");
+      indicator.classList.remove("translate-x-4", "sm:translate-x-7");
       monthlyLabel.classList.remove("text-gray-500");
       monthlyLabel.classList.add("text-black");
       annuallyLabel.classList.remove("text-black");
       annuallyLabel.classList.add("text-gray-500");
     } else {
-      indicator.classList.add("translate-x-8");
+      indicator.classList.add("translate-x-4", "sm:translate-x-7");
       monthlyLabel.classList.remove("text-black");
       monthlyLabel.classList.add("text-gray-500");
       annuallyLabel.classList.remove("text-gray-500");
