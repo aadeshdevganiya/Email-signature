@@ -1391,6 +1391,9 @@
   .pl-14 {
     padding-left: calc(var(--spacing) * 14);
   }
+  .pl-\[15px\] {
+    padding-left: 15px;
+  }
   .pl-\[40px\] {
     padding-left: 40px;
   }
