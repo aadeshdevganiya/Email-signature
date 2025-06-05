@@ -16,7 +16,7 @@
     background: linear-gradient(180deg, #FFEBE3 0%, #E6F2FF 90.93%);
 }
 
-.bg-gradient-primary-for.bg-gradient-primary-hover:hover{
+.bg-gradient-primary-for.bg-gradient-primary-hover:hover {
     background: linear-gradient(180deg, #FFEBE3 0%, #E6F2FF 90.93%);
 }
 
@@ -28,12 +28,12 @@ h1, h2, h4, h6 {
     @apply font-heading font-bold
 }
 
-.navmenu ul li a{
+.navmenu ul li a {
     @apply border-b border-[#ddd] pb-3 lg:pb-0 lg:border-0 block
 }
 
 .navmenu ul li a:hover, .navmenu ul li a.active {
-    @apply text-orange border-b border-orange pb-3 lg:pb-0 lg:border-0 
+    @apply text-orange border-b border-orange pb-3 lg:pb-0 lg:border-0
 }
 
 .about-slider .slick-track, .user-slider .slick-track {
@@ -76,51 +76,82 @@ h1, h2, h4, h6 {
     @apply text-orange font-bold
 }
 
-.sidebar nav ul li a{
+.sidebar nav ul li a {
     @apply flex gap-3.5 items-center font-semibold px-3.5 sm:px-4 py-3 sm:py-3.5 mb-2.5 sm:mb-3.5 text-sm sm:text-base
 }
 
-.sidebar nav ul li a.active , .sidebar nav ul li a:hover{
+.sidebar nav ul li a.active, .sidebar nav ul li a:hover {
     @apply text-orange bg-[#E5581229] rounded-lg
 }
 
-.sidebar nav ul li a.active svg path , .sidebar nav ul li a:hover svg path{
+.sidebar nav ul li a.active svg path, .sidebar nav ul li a:hover svg path {
     @apply fill-orange
 }
 
-table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date{
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
     @apply text-left
 }
-table.dataTable > thead > tr > th{
+
+table.dataTable>thead>tr>th {
     @apply border-none
 }
-table.dataTable > thead > tr > th,table.dataTable > tbody > tr > td{
+
+table.dataTable>thead>tr>th, table.dataTable>tbody>tr>td {
     @apply text-sm py-4 text-nowrap
 }
-table.dataTable.stripe > tbody > tr:nth-child(odd) > *, table.dataTable.display > tbody > tr:nth-child(odd) > *{
+
+table.dataTable.stripe>tbody>tr:nth-child(odd)>*, table.dataTable.display>tbody>tr:nth-child(odd)>* {
     @apply shadow-none
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button{
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
     @apply py-0.5 px-3 m-0 bg-orange text-white
 }
-.dataTables_wrapper .dataTables_length , .dataTables_wrapper .dataTables_filter{
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter {
     @apply mb-4 sm:mb-7 text-sm sm:text-base
 }
-.dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate{
+
+.dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate {
     @apply text-sm sm:text-base
 }
-.Signature-tab .tab-item.active{
+
+.Signature-tab .tab-item.active {
     @apply bg-orange text-white
 }
-.select-plan .plan.active{
+
+.select-plan .plan.active {
     @apply border-primary
 }
-.select-plan .plan.active .plan-data{
+
+.select-plan .plan.active .plan-data {
     @apply bg-gradient-to-b from-[#eff0f1] to-[#eff0f1]
 }
-.select-plan .plan.active .plan-button{
+
+.select-plan .plan.active .plan-button {
     @apply bg-gradient-to-b from-[#202c39] to-[#202c39]
 }
-.select-plan .plan.active ul li svg circle{
-    @apply fill-primary 
+
+.select-plan .plan.active ul li svg circle {
+    @apply fill-primary
+}
+
+.tab-content {
+    @apply max-h-[605px] xl:max-h-full overflow-auto pr-3 
+}
+.tab-content::-webkit-scrollbar , .scrollbar-color-style::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.tab-content::-webkit-scrollbar-track , .scrollbar-color-style::-webkit-scrollbar-track {
+  background: transparent;
+}
+.tab-content::-webkit-scrollbar-thumb , .scrollbar-color-style::-webkit-scrollbar-thumb {
+  background-color: #cbd5e0;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+.tab-content::-webkit-scrollbar-thumb:hover ,scrollbar-color-style::-webkit-scrollbar-thumb:hover {
+  background-color: #a0aec0;
 }
