@@ -1,0 +1,1008 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Signature</title>
+    <link rel="icon" type="image/x-icon"
+      href="assets/images/favi-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link href="./output.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- header-section -->
+    <header class="mb-[-100px] relative z-10">
+      <div class="container mx-auto px-[15px] lg:px-[0px]">
+        <div
+          class="flex justify-between items-center bg-secondary text-primary max-h-[78px] mt-[20px] mx-auto rounded-full sm:px-[28px] py-[10px]"
+          id="header">
+          <div class="logo" id="logo">
+            <a href="index.html"><img
+                src="./assets/images/logo.png"
+                alt
+                class="max-w-[150px] md:max-w-[188px]"></a>
+          </div>
+          <div
+            class="burgerMenu lg:hidden w-6 h-6 cursor-pointer bg-transparent duration-300 ease-in-out relative z-[51]"
+            id="burgerMenu">
+            <span
+              class="absolute block w-full h-[2px] bg-black rounded-[2px] duration-150 ease-in-out origin-[left-center] top-0"></span>
+            <span
+              class="absolute block w-full h-[2px] bg-black rounded-[2px] duration-150 ease-in-out origin-[left-center] top-2"></span>
+            <span
+              class="absolute block w-full h-[2px] bg-black rounded-[2px] duration-150 ease-in-out origin-[left-center] top-4"></span>
+          </div>
+          <nav
+            class="navmenu lg:block fixed lg:static h-screen lg:h-full bottom-0 top-0 right-0 w-full sm:w-1/2 bg-white bg-opacity-95 px-7 pt-20 z-50 lg:pt-0 lg:px-0 lg:bg-transparent lg:w-auto hidden"
+            id="navMenu">
+            <ul
+              class="flex flex-col h-full font-medium gap-4 lg:flex-row lg:items-center lg:gap-10 xl:gap-11  bg-white py-4 lg:px-9 rounded-full">
+              <li class><a href="index.html"
+                  class>Home</a></li>
+              <li class><a href="pricing.html"
+                  class>Pricing</a></li>
+              <li class><a href="faq.html" class>FAQ</a></li>
+              <li class><a href="contact.html"
+                  class>Contact</a></li>
+              <li class><a href="try-free.html" class="active">Try
+                  for -
+                  Free
+                </a></li>
+              <div class="block mt-2.5 lg:hidden"
+                id="getInTouchBtn">
+                <div class="flex gap-7 items-center">
+                  <a href="log-in.html"
+                    class="text-base hover:text-orange">Log
+                    In</a>
+                  <a href="sign-up.html"
+                    class="py-3 px-6 bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full font-semibold text-white text-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                    Sign Up
+                  </a>
+                </div>
+              </div>
+            </ul>
+          </nav>
+          <div class="hidden lg:block" id="getInTouchBtn">
+            <div class="flex gap-7 items-center">
+              <a href="log-in.html"
+                class="text-base hover:text-orange">Log
+                In</a>
+              <a href="sign-up.html"
+                class="py-3 px-6 bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full font-semibold text-white text-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                Sign Up
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner-section  -->
+    <section
+      class="bg-gradient-to-b from-[#FFEBE3] to-[rgba(230,242,255,0.1)] relative">
+      <div class="container mx-auto px-3.5">
+        <div
+          class="banner-text pt-[150px] sm:pt-[186px] max-w-[775px] text-center mx-auto">
+          <h1
+            class="text-orange text-3xl sm:text-5xl lg:text-7xl font-bold leading-10 sm:leading-[65px] lg:leading-[92px] mb-6 ">Free
+            Email
+            <span class="text-primary block">Signature</span></h1>
+          <p
+            class="font-medium sm:leading-6 mb-6 lg:mb-8 max-w-[692px] mx-auto text-sm sm:text-base">Try
+            a free email signature
+            Or <a href="sign-up.html" class="text-orange">Sign up</a> for more
+            options.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-[70px] pt-14 lg:pb-[150px]">
+      <div class="container px-3.5 mx-auto">
+        <!-- <div
+          class="common-heading max-w-[379px] sm:max-w-[455px] xl:max-w-[579px] mx-auto text-center mb-8 md:mb-16">
+          <h2
+            class="text-3xl sm:text-4xl lg:text-[42px] xl:text-[54px] lg:leading-[64px] mb-4">
+            Free Email Signature
+          </h2>
+          <p class="text-base sm:text-lg">Try a free email signature
+            Or <a href class="text-orange">Sign up</a> for more
+            options.</p>
+        </div> -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 xl:gap-8  w-full">
+          <div>
+            <div
+              class="rounded-[20px] bg-gradient-primary p-2 overflow-x-hidden">
+              <div class="bg-white rounded-[20px] p-4 sm:p-6">
+                <div
+                  class="flex gap-6 border-b border-[#F2EDEA] mb-4 overflow-x-auto">
+                  <span id="tab-main"
+                    class="tab-item text-orange-500 font-semibold border-b-2 border-orange-500 pb-5 cursor-pointer">Main</span>
+                  <span id="tab-social"
+                    class="tab-item text-gray-400 cursor-pointer">Social</span>
+                  <span id="tab-disclaimer"
+                    class="tab-item text-gray-400 cursor-pointer">Disclaimer</span>
+                  <span id="tab-banner"
+                    class="tab-item text-gray-400 cursor-pointer">Banner</span>
+                  <span id="tab-style"
+                    class="tab-item text-gray-400 cursor-pointer">Style</span>
+                  <span id="tab-apps"
+                    class="tab-item text-gray-400 cursor-pointer">Apps</span>
+                </div>
+
+                <div id="content-main"
+                  class="tab-content block">
+                  <div
+                    class="grid grid-cols-1 xl:grid-cols-2 gap-5">
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">First
+                        Name*</label>
+                      <input id="firstName"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="John" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Last
+                        Name*</label>
+                      <input id="lastName"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Smith" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Job
+                        Title</label>
+                      <input id="jobTitle"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="John" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Department</label>
+                      <input id="department"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Smith" />
+                    </div>
+                    <div class="xl:col-span-2">
+                      <label
+                        class="block text-sm font-semibold mb-2">Company
+                        Name</label>
+                      <input id="company"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5 py  py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="HubSpot" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Office
+                        Phone Number</label>
+                      <input id="officePhone"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="111 222 5333" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Mobile
+                        Phone Number</label>
+                      <input id="mobilePhone"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="111 222 5333" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Website
+                        URL</label>
+                      <input id="website"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="www.hubspot.com" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Email
+                        Address</label>
+                      <input id="email"
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="john@smith.com" />
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center mt-6 sm:mt-12">
+                    <button type="submit"
+                      class="py-3 px-6 lg:py-5 lg:px-8 inline-block bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full text-sm lg:text-base font-semibold text-white transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      Create Brand Name
+                    </button>
+
+                  </div>
+                </div>
+                <div id="content-social"
+                  class="tab-content hidden">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Behance</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Behance" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Blogger</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Blogger" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Deliciou</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Deliciou" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">DeviantART</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="DeviantART" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Digg</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Digg" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Dribbble</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Dribbble" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Evernote</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Evernote" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Facebook</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Facebook" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Flickr</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Flickr" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Formspring</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Formspring" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">GooglePlus</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="GooglePlus" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Instgram</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Instgram" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Linked-in</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Linked-in" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">MySpace</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="MySpace" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Picasa</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Picasa" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Pinterest</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Pinterest" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Pocket</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Pocket" />
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Skype</label>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Skype" />
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center gap-4 mt-6 sm:mt-12">
+                    <button type="button"
+                      class="nav-prev py-[11px] px-[25px] inline-block cursor-pointer bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      PREV
+                    </button>
+
+                    <button type="button"
+                      class="nav-next py-[11px] px-[25px] inline-block cursor-pointer border-2 border-orange rounded-full text-sm font-semibold text-orange transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      NEXT
+                    </button>
+
+                  </div>
+                </div>
+                <div id="content-disclaimer"
+                  class="tab-content hidden">
+
+                  <div class="my-6">
+                    <label for
+                      class="block mb-2 font-semibold">Show
+                      Disclaimer</label>
+                    <div
+                      class="flex gap-6 items-center">
+                      <div class="block">
+                        <input type="radio"
+                          name="Disclaimer"
+                          id="yes"
+                          class="accent-orange">
+                        <label for="yes"
+                          class="cursor-pointer">Yes</label>
+                      </div>
+                      <div class="block">
+                        <input type="radio"
+                          name="Disclaimer"
+                          id="no"
+                          class="accent-orange">
+                        <label for="no"
+                          class="cursor-pointer">No</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <label for="Disclaimer"
+                      class="font-semibold">Disclaimer</label>
+                    <textarea
+                      class="w-full border-2 border-[#EBEBEB]  py-2.5 px-3.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm resize-none mt-2 p-2 text-xs"
+                      name id cols="30"
+                      rows="10"></textarea>
+                  </div>
+                  <p
+                    class="text-xs text-orange pt-4 text-center">Disclaimer
+                    in Email Signatures are Not Just
+                    Annoying.
+                    But Legally Meaningless</p>
+                  <div
+                    class="flex justify-center gap-4 mt-6 sm:mt-12">
+                    <button type="button"
+                      class="nav-prev py-[11px] px-[25px] inline-block cursor-pointer bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      PREV
+                    </button>
+
+                    <button type="button"
+                      class="nav-next py-[11px] px-[25px] inline-block cursor-pointer border-2 border-orange rounded-full text-sm font-semibold text-orange transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      NEXT
+                    </button>
+
+                  </div>
+                </div>
+                <div id="content-banner"
+                  class="tab-content hidden">
+                  <div class="my-6">
+                    <label for
+                      class="block mb-2 font-semibold">Show
+                      Disclaimer</label>
+                    <div
+                      class="flex gap-6 items-center">
+                      <div class="block">
+                        <input type="radio"
+                          name="Disclaimer"
+                          id="yes"
+                          class="accent-orange">
+                        <label for="yes"
+                          class="cursor-pointer">Yes</label>
+                      </div>
+                      <div class="block">
+                        <input type="radio"
+                          name="Disclaimer"
+                          id="no"
+                          class="accent-orange">
+                        <label for="no"
+                          class="cursor-pointer">No</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <label for="Disclaimer"
+                      class="font-semibold">Disclaimer</label>
+                    <input type="file"
+                      placeholder="Website"
+                      class="file:mr-4 file:py-2 file:px-4 file:border file:border-orange file:text-sm file:font-semibold file:bg-[#E5581233]   file:text-orange rounded-lg file:rounded-md hover:file:bg-opacity-30 text-sm block border-2 border-[#EBEBEB] focus:border-orange p-3 w-full outline-none duration-200 ease-in-out">
+                  </div>
+                  <div class="mt-6">
+                    <label
+                      class="block text-sm font-semibold mb-2">Blogger</label>
+                    <input
+                      class="w-full border-2 border-[#EBEBEB] px-3.5   py-2.5 sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                      placeholder="Blogger" />
+                  </div>
+                  <div
+                    class="flex justify-center gap-4 mt-6 sm:mt-12">
+                    <button type="button"
+                      class="nav-prev py-[11px] px-[25px] inline-block cursor-pointer bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      PREV
+                    </button>
+
+                    <button type="button"
+                      class="nav-next py-[11px] px-[25px] inline-block cursor-pointer border-2 border-orange rounded-full text-sm font-semibold text-orange transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      NEXT
+                    </button>
+
+                  </div>
+                </div>
+                <div id="content-style"
+                  class="tab-content hidden">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="md:col-span-2">
+                      <div class="relative">
+                        <label
+                          class="absolute top-1.5 left-4 text-[10px] text-orange">Select
+                          Theme</label>
+                        <select name id
+                          class="w-full  border-2 border-[#EBEBEB] px-3.5 pt-5 pb-2  outline-none focus:border-orange rounded-lg appearance-none">
+                          <option value>Theme
+                            One</option>
+                          <option value>Theme
+                            Two</option>
+                          <option value>Theme
+                            Three</option>
+                          <option value>Theme
+                            Four</option>
+                        </select>
+                        <div
+                          class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                          <svg width="14"
+                            height="7"
+                            viewBox="0 0 14 7"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.60938 7L0.109375 0L13.1094 0L6.60938 7Z"
+                              fill="#E55812" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Text color" />
+                    </div>
+                    <div>
+                      <input
+                        class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                        placeholder="Link Color" />
+                    </div>
+                    <div class="relative">
+                      <label
+                        class="absolute top-1.5 left-4 text-[10px] text-orange">Font
+                        Style</label>
+                      <select name id
+                        class="w-full  border-2 border-[#EBEBEB] px-3.5 pt-5 pb-2  outline-none focus:border-orange rounded-lg appearance-none">
+                        <option value>Open
+                          Sans</option>
+                        <option
+                          value>Lato</option>
+                        <option
+                          value>Roboto</option>
+                        <option value>Times New
+                          Roman</option>
+                      </select>
+                      <div
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                        <svg width="14"
+                          height="7"
+                          viewBox="0 0 14 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.60938 7L0.109375 0L13.1094 0L6.60938 7Z"
+                            fill="#E55812" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <label
+                        class="absolute top-1.5 left-4 text-[10px] text-orange">Font
+                        Size</label>
+                      <select name id
+                        class="w-full  border-2 border-[#EBEBEB] px-3.5 pt-5 pb-2  outline-none focus:border-orange rounded-lg appearance-none">
+                        <option
+                          value>14</option>
+                        <option
+                          value>16</option>
+                        <option
+                          value>18</option>
+                        <option
+                          value>24</option>
+                      </select>
+                      <div
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                        <svg width="14"
+                          height="7"
+                          viewBox="0 0 14 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.60938 7L0.109375 0L13.1094 0L6.60938 7Z"
+                            fill="#E55812" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <label
+                        class="absolute top-1.5 left-4 text-[10px] text-orange">Social
+                        icon</label>
+                      <select name id
+                        class="w-full  border-2 border-[#EBEBEB] px-3.5 pt-5 pb-2  outline-none focus:border-orange rounded-lg appearance-none">
+                        <option value>Icon set
+                          one</option>
+                        <option value>Icon set
+                          Two</option>
+                        <option value>Icon set
+                          Three</option>
+                        <option value>Icon set
+                          Four</option>
+                      </select>
+                      <div
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                        <svg width="14"
+                          height="7"
+                          viewBox="0 0 14 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.60938 7L0.109375 0L13.1094 0L6.60938 7Z"
+                            fill="#E55812" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <label
+                        class="absolute top-1.5 left-4 text-[10px] text-orange">Icon
+                        Size</label>
+                      <select name id
+                        class="w-full  border-2 border-[#EBEBEB] px-3.5 pt-5 pb-2  outline-none focus:border-orange rounded-lg appearance-none">
+                        <option
+                          value>20px</option>
+                        <option
+                          value>24px</option>
+                        <option
+                          value>30px</option>
+                        <option
+                          value>36px</option>
+                      </select>
+                      <div
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                        <svg width="14"
+                          height="7"
+                          viewBox="0 0 14 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.60938 7L0.109375 0L13.1094 0L6.60938 7Z"
+                            fill="#E55812" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-semibold mb-2">Icon
+                        Size</label>
+                      <div class="relative">
+                        <select name id
+                          class="w-full  border-2 border-[#EBEBEB] px-3.5 py-3.5  outline-none focus:border-orange rounded-lg appearance-none">
+                          <option
+                            value>20px</option>
+                          <option
+                            value>24px</option>
+                          <option
+                            value>30px</option>
+                          <option
+                            value>36px</option>
+                        </select>
+                        <div
+                          class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                          <svg width="14"
+                            height="7"
+                            viewBox="0 0 14 7"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M6.60938 7L0.109375 0L13.1094 0L6.60938 7Z"
+                              fill="#E55812" />
+                          </svg>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-center gap-4 mt-6 sm:mt-12">
+                    <button type="button"
+                      class="nav-prev py-[11px] px-[25px] inline-block cursor-pointer bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      PREV
+                    </button>
+
+                    <button type="button"
+                      class="nav-next py-[11px] px-[25px] inline-block cursor-pointer border-2 border-orange rounded-full text-sm font-semibold text-orange transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      NEXT
+                    </button>
+
+                  </div>
+                </div>
+                <div id="content-apps"
+                  class="tab-content hidden">
+                  <div class="mt-4">
+                    <label
+                      class="block text-sm font-semibold mb-2">App
+                      store link</label>
+                    <input
+                      class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                      placeholder="link" />
+                  </div>
+                  <div class="mt-4">
+                    <label
+                      class="block text-sm font-semibold mb-2">App
+                      store link</label>
+                    <input
+                      class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                      placeholder="link" />
+                  </div>
+                  <div class="mt-4">
+                    <label
+                      class="block text-sm font-semibold mb-2">App
+                      store link</label>
+                    <input
+                      class="w-full border-2 border-[#EBEBEB] px-3.5  py-2.5  sm:py-3.5  outline-none focus:border-orange rounded-lg placeholder:text-[#C3C3C3] placeholder:text-sm"
+                      placeholder="link" />
+                  </div>
+                  <div
+                    class="flex justify-center gap-4 mt-6 sm:mt-12">
+                    <button type="button"
+                      class="nav-prev py-[11px] px-[25px] inline-block cursor-pointer bg-gradient-to-b from-[#FF925C] to-[#E55812] rounded-full text-sm font-semibold text-white transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                      PREV
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <form method="get">
+            <div
+              class="flex justify-center sm:p-2">
+              <div
+                class="bg-white rounded-2xl shadow-secondary overflow-hidden w-full md:w-[668px] ">
+                <div class="py-5 sm:py-7 px-7 bg-primary mb-5">
+                  <svg width="36" height="9"
+                    viewBox="0 0 36 9"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4" cy="4.81055" r="4"
+                      fill="#ED2D40" />
+                    <circle cx="18" cy="4.81055" r="4"
+                      fill="#FFBC4B" />
+                    <circle cx="32" cy="4.81055" r="4"
+                      fill="#4FB06D" />
+                  </svg>
+                </div>
+                <div
+                  class="px-7 pb-5 border-b-2 border-[#EBEBEB]">
+                  <p class="text-sm sm:text-base mb-1.5">To :
+                    <span
+                      class="text-green py-1 px-3.5 rounded-30px bg-[#E5F6E8]">Your
+                      Recipient</span></p>
+                  <p
+                    class="text-sm sm:text-base mb-1.5">Subject:
+                    Check out my
+                    new
+                    Email
+                    Signature</p>
+                </div>
+                <div
+                  class="flex justify-center items-center">
+                  <div
+                    class="flex gap-4 sm:gap-9 px-3 pt-8 sm:pt-10 pb-8 sm:pb-16">
+                    <div class="img">
+                      <img
+                        src="./assets/images/Clip path group.png"
+                        alt>
+                    </div>
+                    <div class="text">
+                      <h6 class="text-lg mb-0.5">John
+                        Smith</h6>
+                      <ul
+                        class="pb-7 border-b-2 border-[#EBEBEB] mb-6">
+                        <li
+                          class="text-sm mb-1">Marketer</li>
+                        <li
+                          class="text-sm mb-1">Marketing
+                          I
+                          HubSpot</li>
+                        <li class="text-sm mb-1">He
+                          I
+                          Him</li>
+                      </ul>
+                      <ul>
+                        <li class="mb-3">
+                          <a href
+                            class="flex items-center">
+                            <svg width="14"
+                              height="15"
+                              viewBox="0 0 14 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M12.8764 9.99994C12.0193 9.99994 11.1777 9.86588 10.3802 9.60233C9.98937 9.46904 9.50895 9.59132 9.27044 9.83628L7.69628 11.0246C5.87069 10.0501 4.74617 8.92595 3.78498 7.11408L4.93834 5.58094C5.23799 5.28169 5.34547 4.84455 5.2167 4.4344C4.95201 3.63268 4.81756 2.79147 4.81756 1.93397C4.81759 1.31451 4.31363 0.810547 3.6942 0.810547H1.12315C0.503721 0.810547 -0.000244141 1.31451 -0.000244141 1.93394C-0.000244141 9.0342 5.77616 14.8105 12.8764 14.8105C13.4959 14.8105 13.9998 14.3066 13.9998 13.6872V11.1233C13.9998 10.5039 13.4958 9.99994 12.8764 9.99994Z"
+                                fill="#E55812" />
+                            </svg>
+                            <span
+                              class="text-sm sm:text-base ml-3.5">
+                              111 222 3333 |
+                              111
+                              222
+                              3333
+                            </span> </a>
+                        </li>
+                        <li class="mb-3">
+                          <a href
+                            class="flex items-center">
+                            <svg width="14"
+                              height="11"
+                              viewBox="0 0 14 11"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M9.07138 6.31641L7.89885 7.4929C7.42337 7.97005 6.58676 7.98033 6.101 7.4929L4.92842 6.31641L0.717041 10.5415C0.873803 10.6139 1.04664 10.6572 1.23039 10.6572H12.7695C12.9532 10.6572 13.126 10.614 13.2827 10.5415L9.07138 6.31641Z"
+                                fill="#E55812" />
+                              <path
+                                d="M12.7694 0.8125H1.23034C1.04659 0.8125 0.873748 0.855758 0.717041 0.928246L5.21719 5.44333C5.21749 5.44363 5.21785 5.44368 5.21815 5.44398C5.21845 5.44429 5.21851 5.4447 5.21851 5.4447L6.68175 6.91278C6.83717 7.0682 7.16262 7.0682 7.31804 6.91278L8.78099 5.44494C8.78099 5.44494 8.78134 5.44429 8.78164 5.44398C8.78164 5.44398 8.7823 5.44363 8.7826 5.44333L13.2826 0.928219C13.1259 0.855703 12.9532 0.8125 12.7694 0.8125Z"
+                                fill="#E55812" />
+                              <path
+                                d="M0.130623 1.50195C0.0495215 1.66596 -0.000244141 1.84802 -0.000244141 2.04303V9.42584C-0.000244141 9.62086 0.0494668 9.80291 0.130596 9.96692L4.34927 5.73457L0.130623 1.50195Z"
+                                fill="#E55812" />
+                              <path
+                                d="M13.8688 1.50195L9.65015 5.73463L13.8688 9.96703C13.9499 9.80302 13.9996 9.62097 13.9996 9.4259V2.04309C13.9996 1.84802 13.9499 1.66596 13.8688 1.50195Z"
+                                fill="#E55812" />
+                            </svg>
+                            <span
+                              class="text-sm sm:text-base ml-3.5">
+                              john@smith.com
+                            </span> </a>
+                        </li>
+                        <li class="mb-3">
+                          <a href
+                            class="flex items-center">
+                            <svg width="14"
+                              height="15"
+                              viewBox="0 0 14 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10.8455 7.3135C10.7784 7.37835 10.7248 7.45592 10.688 7.5417C10.6511 7.62747 10.6317 7.71972 10.6309 7.81306C10.6301 7.90641 10.6479 7.99898 10.6832 8.08538C10.7186 8.17178 10.7708 8.25028 10.8368 8.31628C10.9028 8.38229 10.9813 8.43449 11.0677 8.46984C11.1541 8.50519 11.2467 8.52298 11.34 8.52217C11.4334 8.52136 11.5256 8.50196 11.6114 8.46512C11.6972 8.42827 11.7747 8.37472 11.8396 8.30757L12.9251 7.22211C13.6194 6.51167 14.0056 5.55612 13.9999 4.56274C13.9942 3.56937 13.5971 2.6183 12.8947 1.91587C12.1922 1.21344 11.2412 0.8163 10.2478 0.810609C9.25441 0.804917 8.29885 1.19113 7.58842 1.88547L6.50295 2.97094C6.43581 3.03579 6.38225 3.11336 6.34541 3.19913C6.30856 3.2849 6.28917 3.37715 6.28836 3.4705C6.28755 3.56385 6.30533 3.65642 6.34068 3.74282C6.37603 3.82922 6.42823 3.90771 6.49424 3.97372C6.56025 4.03973 6.63874 4.09193 6.72514 4.12728C6.81154 4.16263 6.90411 4.18042 6.99746 4.17961C7.09081 4.17879 7.18306 4.1594 7.26883 4.12256C7.3546 4.08571 7.43218 4.03215 7.49703 3.96501L8.58249 2.87954C8.80192 2.6577 9.06303 2.48142 9.35082 2.36083C9.63861 2.24023 9.94739 2.17772 10.2594 2.17686C10.5714 2.17601 10.8806 2.23684 11.169 2.35585C11.4575 2.47487 11.7195 2.64972 11.9402 2.87036C12.1608 3.091 12.3357 3.35307 12.4547 3.64151C12.5737 3.92995 12.6345 4.23908 12.6337 4.55111C12.6328 4.86314 12.5703 5.17192 12.4497 5.4597C12.3291 5.74749 12.1528 6.0086 11.931 6.22803L10.8455 7.3135Z"
+                                fill="#E55812" />
+                              <path
+                                d="M3.15422 8.30831C3.22136 8.24345 3.27492 8.16588 3.31176 8.08011C3.34861 7.99434 3.368 7.90209 3.36881 7.80874C3.36963 7.71539 3.35184 7.62282 3.31649 7.53642C3.28114 7.45002 3.22894 7.37153 3.16293 7.30552C3.09692 7.23951 3.01843 7.18731 2.93203 7.15196C2.84563 7.11661 2.75306 7.09882 2.65971 7.09964C2.56636 7.10045 2.47411 7.11984 2.38834 7.15669C2.30257 7.19353 2.225 7.24709 2.16014 7.31423L1.07468 8.3997C0.380343 9.11013 -0.00587367 10.0657 -0.000182116 11.0591C0.00550943 12.0524 0.40265 13.0035 1.10508 13.7059C1.80751 14.4084 2.75858 14.8055 3.75195 14.8112C4.74533 14.8169 5.70088 14.4307 6.41131 13.7363L7.49678 12.6509C7.62484 12.5183 7.6957 12.3407 7.6941 12.1564C7.6925 11.972 7.61856 11.7957 7.48822 11.6654C7.35787 11.535 7.18154 11.4611 6.99721 11.4595C6.81288 11.4579 6.6353 11.5287 6.50271 11.6568L5.41724 12.7423C4.97237 13.1823 4.37141 13.4283 3.74568 13.4266C3.11995 13.4249 2.52034 13.1756 2.07789 12.7331C1.63543 12.2907 1.3861 11.6911 1.38439 11.0653C1.38268 10.4396 1.62872 9.83864 2.06875 9.39377L3.15422 8.30831Z"
+                                fill="#E55812" />
+                              <path
+                                d="M4.33174 10.4818C4.46358 10.6136 4.64236 10.6876 4.82878 10.6876C5.0152 10.6876 5.19398 10.6136 5.32582 10.4818L9.67119 6.13643C9.73834 6.07158 9.79189 5.994 9.82874 5.90823C9.86558 5.82246 9.88498 5.73021 9.88579 5.63686C9.8866 5.54352 9.86881 5.45094 9.83346 5.36455C9.79811 5.27815 9.74591 5.19965 9.6799 5.13364C9.6139 5.06764 9.5354 5.01543 9.449 4.98009C9.36261 4.94474 9.27003 4.92695 9.17668 4.92776C9.08334 4.92857 8.99109 4.94797 8.90532 4.98481C8.81954 5.02165 8.74197 5.07521 8.67712 5.14236L4.33174 9.48422C4.26596 9.54956 4.21375 9.62727 4.17812 9.71288C4.14249 9.79848 4.12415 9.89029 4.12415 9.98301C4.12415 10.0757 4.14249 10.1675 4.17812 10.2531C4.21375 10.3388 4.26596 10.4165 4.33174 10.4818Z"
+                                fill="#E55812" />
+                            </svg>
+                            <span
+                              class="text-sm sm:text-base ml-3.5">
+                              www.hubspot.com
+                            </span> </a>
+                        </li>
+                        <li class>
+                          <a href
+                            class="flex items-center">
+                            <svg width="11"
+                              height="16"
+                              viewBox="0 0 11 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M5.49976 0.810547C2.46704 0.810547 -0.000244141 3.27783 -0.000244141 6.31052C-0.000244141 10.0742 4.92172 15.5994 5.13127 15.8328C5.32811 16.052 5.67176 16.0517 5.86824 15.8328C6.07779 15.5994 10.9998 10.0742 10.9998 6.31052C10.9997 3.27783 8.53244 0.810547 5.49976 0.810547ZM5.49976 9.07771C3.97392 9.07771 2.7326 7.83635 2.7326 6.31052C2.7326 4.78468 3.97395 3.54336 5.49976 3.54336C7.02556 3.54336 8.26688 4.78471 8.26688 6.31055C8.26688 7.83638 7.02556 9.07771 5.49976 9.07771Z"
+                                fill="#E55812" />
+                            </svg>
+                            <span
+                              class="text-sm sm:text-base ml-3.5">
+                              line 1, line 2,
+                              line
+                              3,
+                              line
+                              4
+                            </span> </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="grid lg:flex flex-col lg:flex-row justify-center gap-4 lg:gap-8 mt-4 sm:mt-7 lg:mt-14">
+              <button type="reset"
+                class="inline-block font-semibold underline cursor-pointer hover:text-orange text-sm sm:text-base">Clear
+                all
+                input fields</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-setion  -->
+    <footer class="bg-primary text-white text-center sm:text-left">
+      <div class="container px-3.5 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row gap-9  justify-between py-14 md:py-24 border-b border-[#FFFFFF]">
+          <div class="lg:w-1/3 max-w-[448px]">
+            <img src="./assets/images/footer-logo.png" alt
+              class="mb-3 md:mb-6 mx-auto sm:mx-0 max-w-[150px] sm:max-w-full">
+            <p class="text-sm md:text-base font-light">Lorem Ipsum
+              is simply dummy text
+              of the printing and
+              typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s,
+              when an unknown printer.</p>
+          </div>
+          <div
+            class="lg:w-1/3 flex justify-between gap-10 max-w-[244px] mx-auto sm:mx-0">
+            <ul class>
+              <p
+                class="text-base md:text-xl font-semibold mb-1.5 md:mb-4">Website</p>
+              <li
+                class="text-sm md:text-base mb-1.5 font-light"><a
+                  href="index.html" class="hover:text-orange">Home</a></li>
+              <li
+                class="text-sm md:text-base mb-1.5 font-light"><a
+                  href="pricing.html"
+                  class="hover:text-orange">Pricing</a></li>
+              <li
+                class="text-sm md:text-base mb-1.5 font-light"><a
+                  href="faq.html" class="hover:text-orange">FAQ</a></li>
+              <li
+                class="text-sm md:text-base mb-1.5 font-light"><a
+                  href="contact.html"
+                  class="hover:text-orange">Contact</a></li>
+            </ul>
+            <ul>
+              <p
+                class="text-base md:text-xl font-semibold mb-1.5 md:mb-4">Legal</p>
+              <li
+                class="text-sm md:text-base mb-1.5 font-light"><a
+                  href
+                  class="hover:text-orange">Instagram</a></li>
+              <li
+                class="text-sm md:text-base mb-1.5 font-light"><a
+                  href
+                  class="hover:text-orange">LinkedIn</a></li>
+              <li
+                class="text-sm md:text-base mb-1.5 font-light"><a
+                  href
+                  class="hover:text-orange">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="lg:w-1/3 max-w-[425px]">
+            <h6 class="text-base md:text-xl mb-1.5 md:mb-4">Stay
+              Updated</h6>
+            <p class="text-sm sm:text-base font-light">Get exclusive
+              offers and
+              become part of our family!
+            </p>
+            <form action
+              class="flex bg-white p-1 md:p-2 rounded mt-3 md:mt-5">
+              <input type="email"
+                class="bg-transparent text-sm py-2 sm:py-3 px-3 outline-none text-primary w-full"
+                required placeholder="Your Email Address">
+              <input type="submit" value="SUBSCRIBE"
+                class="bg-orange text-xs placeholder:text-sm px-4 py-2 sm:px-6 sm:py-3 cursor-pointer rounded tracking-widest font-medium">
+            </form>
+          </div>
+        </div>
+        <div
+          class="copy-right py-6 flex flex-col gap-5 sm:gap-0 sm:flex-row justify-between text-sm sm:text-base">
+          <div class="font-light"> <a
+              href="mailto:signatory@example.com">@ Copyright mail
+              signatory</a> <span id="year"></span> / <a
+              href class="hover:text-orange">Terms &
+              Condiations</a></div>
+          <div
+            class="flex justify-center sm:justify-start gap-4 sm:gap-7">
+            <a href>
+              <svg width="27" height="27" viewBox="0 0 27 27"
+                class="w-[20px] sm:w-[27px]"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.8878 16.7892C16.7313 16.7892 17.5609 16.7892 18.4113 16.7892C18.5995 15.5693 18.7877 14.3703 18.9829 13.1435C17.6933 13.1435 16.4385 13.1435 15.1559 13.1435C15.1489 13.0459 15.142 12.9692 15.142 12.8925C15.142 12.1536 15.142 11.4147 15.142 10.6758C15.1489 9.59529 15.7554 8.88426 16.8289 8.80061C17.5609 8.74485 18.3067 8.76576 19.0457 8.75182C19.192 8.75182 19.3384 8.75182 19.5057 8.75182C19.5057 7.69224 19.5057 6.63964 19.5057 5.55916C19.206 5.51733 18.8923 5.46853 18.5786 5.43368C17.3587 5.31518 16.1388 5.1897 14.9189 5.49642C13.0786 5.97044 11.8308 7.30187 11.6008 9.19098C11.4823 10.1878 11.5171 11.2056 11.4823 12.2094C11.4753 12.5021 11.4823 12.8019 11.4823 13.1295C10.5133 13.1295 9.55132 13.1295 8.56146 13.1295C8.56146 13.7569 8.56146 14.3564 8.56146 14.9489C8.56146 15.5484 8.56146 16.1479 8.56146 16.7823C9.53041 16.7823 10.4924 16.7823 11.4683 16.7823C11.4683 19.8982 11.4683 22.9794 11.4683 26.0605C5.94041 25.3216 0.496157 20.5674 0.454332 13.2341C0.412506 6.075 6.07983 0.498303 12.8625 0.24038C20.0773 -0.0384547 26.0444 5.60098 26.2884 12.7322C26.4069 16.12 25.3891 19.1593 23.1515 21.7455C21.2136 23.9832 18.8017 25.4471 15.8809 26.0884C15.8878 22.9794 15.8878 19.8982 15.8878 16.7892Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a href>
+              <svg width="27" height="27" viewBox="0 0 27 27"
+                class="w-[20px] sm:w-[27px]"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.1634 13.1245C26.1634 16.6258 26.1634 20.155 26.1634 23.6564C26.1634 24.6568 25.7465 25.4071 24.8295 25.8239C24.5516 25.9351 24.2181 26.0184 23.9125 26.0184C16.7985 26.0184 9.65685 26.0184 2.54292 26.0184C1.32022 26.0184 0.375402 25.1014 0.319824 23.8787C0.319824 23.7953 0.319824 23.712 0.319824 23.6564C0.319824 16.6536 0.319824 9.62307 0.319824 2.6203C0.319824 1.81443 0.56992 1.1475 1.23685 0.6473C1.65368 0.341624 2.12609 0.230469 2.62629 0.230469C4.98833 0.230469 7.35038 0.230469 9.71242 0.230469C14.4087 0.230469 19.1328 0.230469 23.8291 0.230469C24.9684 0.230469 25.8577 0.925188 26.08 1.98116C26.1356 2.20347 26.1356 2.42578 26.1356 2.64809C26.1634 6.12169 26.1634 9.62307 26.1634 13.1245ZM14.631 9.23403C14.6032 8.73383 14.5477 8.70604 14.0197 8.70604C12.9915 8.70604 11.9633 8.70604 10.9629 8.70604C10.5739 8.70604 10.4627 8.8172 10.4627 9.20624C10.4627 13.2912 10.4627 17.3483 10.4627 21.4333C10.4627 21.8223 10.5739 21.9335 10.9629 21.9335C11.9911 21.9335 13.0471 21.9335 14.0753 21.9335C14.5199 21.9335 14.6032 21.8501 14.6032 21.3777C14.6032 19.2936 14.6032 17.1816 14.6032 15.0975C14.6032 14.8474 14.6032 14.625 14.631 14.3749C14.7144 13.4301 15.3258 12.791 16.2428 12.6243C17.0764 12.4575 17.8267 12.9021 18.0212 13.7358C18.1046 14.0971 18.1324 14.5139 18.1324 14.9029C18.1324 17.0705 18.1324 19.238 18.1324 21.4055C18.1324 21.8501 18.2436 21.9613 18.6882 21.9613C19.6886 21.9613 20.7168 21.9613 21.7172 21.9613C22.2174 21.9613 22.3007 21.8779 22.3007 21.4055C22.3007 19.0157 22.3007 16.6258 22.3007 14.236C22.3007 13.708 22.2729 13.1522 22.1618 12.6243C21.5504 9.31739 18.6604 8.15026 16.1872 8.70604C15.6592 8.78941 15.159 9.03951 14.631 9.23403ZM4.18245 15.3476C4.18245 17.3761 4.18245 19.4047 4.18245 21.4333C4.18245 21.8501 4.29361 21.9613 4.71044 21.9613C6.01652 21.9613 7.35038 21.9613 8.65645 21.9613C9.07328 21.9613 9.18443 21.8501 9.18443 21.4333C9.18443 17.3761 9.18443 13.319 9.18443 9.23403C9.18443 8.8172 9.10107 8.70604 8.65645 8.70604C7.35038 8.70604 6.0443 8.70604 4.73823 8.70604C4.26582 8.70604 4.18245 8.78941 4.18245 9.26182C4.18245 11.2904 4.18245 13.319 4.18245 15.3476ZM4.62708 6.28842C4.62708 6.56631 4.62708 6.84419 4.62708 7.12208C4.62708 7.8168 5.0717 8.317 5.76641 8.34479C6.37777 8.37257 6.98912 8.37257 7.57268 8.34479C8.23961 8.317 8.68423 7.87238 8.68423 7.20545C8.71202 6.59409 8.71202 5.98274 8.68423 5.39918C8.65644 4.70446 8.15625 4.25984 7.48932 4.25984C6.93355 4.25984 6.37777 4.25984 5.82199 4.25984C5.09949 4.25984 4.59928 4.76004 4.59928 5.48254C4.62707 5.76043 4.62708 6.03832 4.62708 6.28842Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a href>
+              <svg width="27" height="27" viewBox="0 0 27 27"
+                class="w-[20px] sm:w-[27px]"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.22513 0.230469C11.8043 0.230469 14.3834 0.230469 16.9625 0.230469C17.1148 0.2457 17.262 0.255855 17.4144 0.271086C18.3841 0.357395 19.3741 0.362472 20.3286 0.550322C22.8468 1.05802 24.5983 2.52021 25.4868 4.96226C25.9133 6.1452 26.0148 7.37892 26.0199 8.61771C26.0301 11.5827 26.0402 14.5528 26.0098 17.5177C25.9996 18.457 25.9336 19.4115 25.7559 20.3304C25.2736 22.808 23.852 24.5646 21.476 25.4887C20.3286 25.9354 19.1202 26.0522 17.9018 26.0674C15.1703 26.0928 12.4389 26.1182 9.71252 26.1081C8.36711 26.103 7.01662 26.0979 5.69151 25.773C3.54901 25.2551 1.95483 24.0366 1.0105 22.0312C0.426641 20.7975 0.248946 19.4673 0.233715 18.1219C0.203253 15.3245 0.172791 12.527 0.193099 9.72958C0.203253 8.55171 0.274331 7.36876 0.44695 6.20613C0.716033 4.39363 1.58928 2.89083 3.07177 1.77896C4.34102 0.824481 5.81336 0.448781 7.36693 0.337087C7.98125 0.291393 8.60573 0.266008 9.22513 0.230469ZM13.1243 23.8386C13.1243 23.8234 13.1243 23.8132 13.1243 23.798C13.8046 23.798 14.49 23.8183 15.1703 23.7929C16.6325 23.7422 18.1099 23.7523 19.5569 23.5746C21.4709 23.3411 22.7808 22.2597 23.3596 20.3761C23.6236 19.513 23.6693 18.6194 23.6794 17.7259C23.7048 15.4362 23.7403 13.1413 23.72 10.8465C23.7099 9.48588 23.6743 8.11509 23.5169 6.75952C23.2783 4.67794 21.9583 3.27161 19.9123 2.86037C19.0187 2.68267 18.0896 2.6319 17.1757 2.61667C14.9165 2.58113 12.6572 2.58621 10.3979 2.59128C9.10328 2.59636 7.79848 2.58113 6.51399 2.80452C4.54919 3.14976 3.20377 4.39363 2.80269 6.34828C2.63007 7.19107 2.57422 8.06939 2.55392 8.93249C2.50822 11.0141 2.49299 13.0956 2.51838 15.1772C2.53361 16.6343 2.5793 18.0914 2.7113 19.5435C2.83823 20.8889 3.45255 22.0211 4.59488 22.808C5.47828 23.4172 6.48861 23.6457 7.53447 23.6863C9.40282 23.7625 11.261 23.7929 13.1243 23.8386Z"
+                  fill="white" />
+                <path
+                  d="M6.46194 13.1872C6.45179 9.52669 9.44215 6.53125 13.1128 6.53125C16.7835 6.53125 19.7384 9.47592 19.7637 13.1618C19.7891 16.8224 16.8038 19.8229 13.1281 19.8331C9.46246 19.8483 6.47209 16.8681 6.46194 13.1872ZM13.1027 17.4925C15.4889 17.4976 17.4131 15.5887 17.4283 13.2025C17.4385 10.8163 15.5295 8.88699 13.1433 8.87176C10.7469 8.85653 8.8126 10.7756 8.80752 13.172C8.80245 15.5582 10.7165 17.4824 13.1027 17.4925Z"
+                  fill="white" />
+                <path
+                  d="M20.0648 4.719C20.9329 4.73424 21.598 5.43994 21.5777 6.31319C21.5574 7.16613 20.8568 7.83122 19.9988 7.81599C19.1458 7.80076 18.4655 7.0849 18.4807 6.21673C18.501 5.37394 19.2067 4.70377 20.0648 4.719Z"
+                  fill="white" />
+              </svg>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>

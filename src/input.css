@@ -69,9 +69,58 @@ h1, h2, h4, h6 {
 }
 
 .collasible ul li {
-    @apply text-[18px] md:text-[22px] font-semibold cursor-pointer
+    @apply text-base sm:text-lg md:text-[22px] font-semibold cursor-pointer
 }
 
 .collasible ul li.active {
     @apply text-orange font-bold
+}
+
+.sidebar nav ul li a{
+    @apply flex gap-3.5 items-center font-semibold px-3.5 sm:px-4 py-3 sm:py-3.5 mb-2.5 sm:mb-3.5 text-sm sm:text-base
+}
+
+.sidebar nav ul li a.active , .sidebar nav ul li a:hover{
+    @apply text-orange bg-[#E5581229] rounded-lg
+}
+
+.sidebar nav ul li a.active svg path , .sidebar nav ul li a:hover svg path{
+    @apply fill-orange
+}
+
+table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date{
+    @apply text-left
+}
+table.dataTable > thead > tr > th{
+    @apply border-none
+}
+table.dataTable > thead > tr > th,table.dataTable > tbody > tr > td{
+    @apply text-sm py-4 text-nowrap
+}
+table.dataTable.stripe > tbody > tr:nth-child(odd) > *, table.dataTable.display > tbody > tr:nth-child(odd) > *{
+    @apply shadow-none
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    @apply py-0.5 px-3 m-0 bg-orange text-white
+}
+.dataTables_wrapper .dataTables_length , .dataTables_wrapper .dataTables_filter{
+    @apply mb-4 sm:mb-7 text-sm sm:text-base
+}
+.dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate{
+    @apply text-sm sm:text-base
+}
+.Signature-tab .tab-item.active{
+    @apply bg-orange text-white
+}
+.select-plan .plan.active{
+    @apply border-primary
+}
+.select-plan .plan.active .plan-data{
+    @apply bg-gradient-to-b from-[#eff0f1] to-[#eff0f1]
+}
+.select-plan .plan.active .plan-button{
+    @apply bg-gradient-to-b from-[#202c39] to-[#202c39]
+}
+.select-plan .plan.active ul li svg circle{
+    @apply fill-primary 
 }
