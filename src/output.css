@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -515,6 +516,9 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
   .h-\[2px\] {
     height: 2px;
   }
@@ -557,6 +561,9 @@
   .max-h-\[78px\] {
     max-height: 78px;
   }
+  .max-h-\[385px\] {
+    max-height: 385px;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -575,8 +582,14 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
   .w-11 {
     width: calc(var(--spacing) * 11);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
   }
   .w-\[20px\] {
     width: 20px;
@@ -845,6 +858,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -1375,6 +1391,9 @@
   .pl-14 {
     padding-left: calc(var(--spacing) * 14);
   }
+  .pl-\[40px\] {
+    padding-left: 40px;
+  }
   .pl-\[50px\] {
     padding-left: 50px;
   }
@@ -1791,6 +1810,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: #FDF3EF;
+      }
+    }
+  }
+  .hover\:bg-gray-50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-50);
       }
     }
   }
@@ -2238,9 +2264,19 @@
       padding-left: calc(var(--spacing) * 6);
     }
   }
+  .sm\:pl-10 {
+    @media (width >= 40rem) {
+      padding-left: calc(var(--spacing) * 10);
+    }
+  }
   .sm\:pl-14 {
     @media (width >= 40rem) {
       padding-left: calc(var(--spacing) * 14);
+    }
+  }
+  .sm\:pl-\[50px\] {
+    @media (width >= 40rem) {
+      padding-left: 50px;
     }
   }
   .sm\:text-left {
@@ -2385,6 +2421,11 @@
   .md\:mb-16 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 16);
+    }
+  }
+  .md\:mb-\[12px\] {
+    @media (width >= 48rem) {
+      margin-bottom: 12px;
     }
   }
   .md\:mb-\[18px\] {
@@ -2899,6 +2940,11 @@
   .lg\:pb-\[150px\] {
     @media (width >= 64rem) {
       padding-bottom: 150px;
+    }
+  }
+  .lg\:pl-10 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 10);
     }
   }
   .lg\:pl-\[60px\] {

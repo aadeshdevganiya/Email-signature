@@ -86,3 +86,4 @@ document.querySelectorAll('[role="tab"]').forEach(tab => {
 
 // Year Cout
 document.getElementById('year').textContent = new Date().getFullYear();
+

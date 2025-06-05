@@ -31,6 +31,17 @@ $(document).ready(function () {
 
 // Bell & User Dropdown Hover
 $(document).ready(function () {
+    $('#bellToggle').hover(
+        function () {
+            $('#notifDropdown').stop(true, true).fadeIn(150);
+            $('#userDropdown').fadeOut(100);
+            $('.arrow-icon').removeClass('rotate-180');
+        },
+        function () {
+            $('#notifDropdown').stop(true, true).fadeOut(150);
+        }
+    );
+
     $('#userToggle').hover(
         function () {
             $('#userDropdown').stop(true, true).fadeIn(150);
