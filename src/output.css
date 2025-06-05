@@ -2038,6 +2038,11 @@
       max-width: 475px;
     }
   }
+  .sm\:max-w-\[514px\] {
+    @media (width >= 40rem) {
+      max-width: 514px;
+    }
+  }
   .sm\:max-w-\[590px\] {
     @media (width >= 40rem) {
       max-width: 590px;
