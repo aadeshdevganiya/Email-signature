@@ -132,7 +132,7 @@ $(document).click(function (e) {
 $(document).ready(function () {
     $('#myTable').DataTable({
         responsive: true,
-        ordering: false
+        ordering: true
     });
 });
 

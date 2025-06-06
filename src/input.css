@@ -140,7 +140,7 @@ table.dataTable.stripe>tbody>tr:nth-child(odd)>*, table.dataTable.display>tbody>
     @apply max-h-[723px] xl:max-h-full overflow-auto xl:overflow-visible pr-3 
 }
 #content-tab.tab-content{
-    @apply overflow-visible
+    @apply overflow-visible pr-0
 }
 .tab-content::-webkit-scrollbar , .scrollbar-color-style::-webkit-scrollbar {
   width: 8px;
